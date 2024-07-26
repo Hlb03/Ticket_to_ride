@@ -59,7 +59,6 @@ public class RouteSearchServiceImpl implements RouteSearchService {
                 .stream()
                 .filter(r -> (r.getDeparture().equals(departureTown) && r.getArrival().equals(arrivalTown))
                         || (r.getDeparture().equals(arrivalTown) && r.getArrival().equals(departureTown)))
-                .peek(System.out::println) //TODO: remove it
                 .findFirst()
                 .orElseThrow(() -> new RouteNotFoundException(
                         String.format("Failed to find a route from %s to %s", departureTown, arrivalTown))
