@@ -2,6 +2,10 @@
 
 This application consists of four endpoints (two public and two private).
 
+Swagger documentation is available via URL:
+
+        http://localhost:8080/api/v1/swagger-ui/index.html
+
 --- 
 Public endpoints:
 
@@ -32,6 +36,7 @@ Additional tools:
 
 * Flyway
 * Docker
+* OpenAPI/Swagger
 
 ---
 Endpoints request examples:
